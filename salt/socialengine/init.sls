@@ -55,3 +55,9 @@
     - makedirs: false
     - require:
       - archive: /var/www/socialengine
+
+/var/www/socialengine/license.txt:
+  file.managed:
+    - user: {{ pillar.user }}
+    - group: {{ pillar.group_www }}
+    - contents_pillar: license
