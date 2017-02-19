@@ -19,4 +19,9 @@ Vagrant.configure("2") do |config|
       vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
   end
 
+  config.vm.provision :salt do |salt|
+    salt.masterless = true
+    salt.minion_config = "minion.conf"
+    salt.run_highstate = true
+  end
 end

@@ -11,6 +11,8 @@
   file.directory:
     - mode: 777
     - makedirs: false
+    - recurse:
+      - mode
     - require:
       - archive: /var/www/socialengine
 
@@ -18,6 +20,8 @@
   file.directory:
     - mode: 777
     - makedirs: false
+    - recurse:
+      - mode
     - require:
       - archive: /var/www/socialengine
 
@@ -25,6 +29,8 @@
   file.directory:
     - mode: 777
     - makedirs: false
+    - recurse:
+      - mode
     - require:
       - archive: /var/www/socialengine
 
@@ -32,6 +38,8 @@
   file.directory:
     - mode: 777
     - makedirs: false
+    - recurse:
+      - mode
     - require:
       - archive: /var/www/socialengine
 
@@ -39,6 +47,8 @@
   file.directory:
     - mode: 777
     - makedirs: false
+    - recurse:
+      - mode
     - require:
       - archive: /var/www/socialengine
 
@@ -46,6 +56,8 @@
   file.directory:
     - mode: 777
     - makedirs: false
+    - recurse:
+      - mode
     - require:
       - archive: /var/www/socialengine
 
@@ -53,6 +65,8 @@
   file.directory:
     - mode: 777
     - makedirs: false
+    - recurse:
+      - mode
     - require:
       - archive: /var/www/socialengine
 
