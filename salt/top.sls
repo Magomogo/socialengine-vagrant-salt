@@ -4,3 +4,4 @@ base:
     - apache
     - environment
     - socialengine
+    - ioncube
