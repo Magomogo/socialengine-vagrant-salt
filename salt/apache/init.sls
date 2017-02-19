@@ -2,9 +2,9 @@
   file.managed:
     - source: salt://apache/vhost.conf
     - template: jinja
-    - user: root
-    - group: root
     - mode: 644
+    - require:
+      - pkg: apache2
     - watch_in:
       - service: apache2
 
@@ -12,8 +12,13 @@
   file.symlink:
     - target: /etc/apache2/sites-available/socialengine.conf
     - require:
-      - pkg: apache2
-    - require_in:
+      - file: /etc/apache2/sites-available/socialengine.conf
+    - watch_in:
+      - service: apache2
+
+/etc/apache2/sites-enabled/000-default.conf:
+  file.absent:
+    - watch_in:
       - service: apache2
 
 {% for mod in "php5","rewrite" %}
