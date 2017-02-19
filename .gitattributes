@@ -1,3 +1,4 @@
 socialengine/socialengine4813_trial.zip filter=lfs diff=lfs merge=lfs -text
 salt/socialengine/socialengine4813_trial.zip filter=lfs diff=lfs merge=lfs -text
 salt/ioncube/ioncube_loader_lin_5.6.so filter=lfs diff=lfs merge=lfs -text
+salt/sources/socialengine4813_trial.zip filter=lfs diff=lfs merge=lfs -text

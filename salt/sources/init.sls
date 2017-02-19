@@ -1,6 +1,6 @@
 /var/www/socialengine:
   archive.extracted:
-    - source: salt://socialengine/socialengine4813_trial.zip
+    - source: salt://sources/socialengine4813_trial.zip
     - user: {{ pillar.user }}
     - group: {{ pillar.group_www }}
     - enforce_toplevel: false

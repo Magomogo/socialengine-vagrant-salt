@@ -3,5 +3,5 @@ base:
     - core
     - apache
     - environment
-    - socialengine
+    - sources
     - ioncube
